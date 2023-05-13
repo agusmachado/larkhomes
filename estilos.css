@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;    
+    font-family: 'Nunito', sans-serif;
 }
-section{
+section{    
     height: calc(100vh - 60px);
     width: 100%;    
 }
@@ -12,8 +12,12 @@ section{
 /* HEADER */
 
 header{
-    position: relative;
-    padding: 0 2rem;
+    position: fixed;    
+    /* position: relative; */
+    /* padding: 0 2rem; */ 
+    width: 100%;
+    padding: 1.1% 5% 1% 5%;
+    background-color: lightblue;       
 }
 
 /* logo */
@@ -23,10 +27,10 @@ img{
 
 /* nav */
 nav{
-    width: 100%;
+    /* width: 100%; */
     height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    padding: 0 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,10 +41,10 @@ nav{
 li{
     list-style: none;
 }
-a{
+nav a{
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 1.18rem;
 }
 a:hover{
     color: orange;
@@ -51,16 +55,21 @@ nav .links{
 }
 
 /* botón GET A QUOTE */
+
 .actionBtn{
-    background-color: blue;
+    background-color: rgba(59, 59, 214, 0.829);
+    width: 10rem;
+    height: 3rem;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
+    border-radius: 3rem;
+    font-size: 1.2rem;    
     cursor: pointer;
     transition: scale 0.2 ease;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
 .actionBtn:hover{
     scale: 1.05;
@@ -104,8 +113,13 @@ nav .toggleBtn{
     justify-content: center;
 }
 .dropdownMenu.open{
-    height: 340px;
+    height: 24rem;    
 }
+.dropdownMenu a{
+    text-decoration: none;
+}
+
+
 
 /* RESPONSIVE DESIGN */
 @media(max-width: 992px){
@@ -120,7 +134,13 @@ nav .toggleBtn{
 
     .dropdownMenu{
         display: block;
-    }
+    } 
+    .section1{
+        padding: 0 5% 0 5%;
+    }   
+    .section1 .imagenSection1 img{
+        display: none;
+    }  
 }
 
 @media (max-width: 576px){
@@ -128,4 +148,150 @@ nav .toggleBtn{
         left: 2rem;
         width: unset;
     }
+    .section1 .tituloSection1{
+        padding: 0 5% 0 5%;        
+        font-size: 1.5rem;        
+    } 
+    .section1 .parrafoSection1{
+        padding: 2% 5% 5% 5%;        
+        font-size: 1.5rem;        
+    } 
+    .section1 .divBusqueda{
+        display: none;
+    } 
+    .section1 .cifrasSection1{
+        padding: 2% 5% 0 5%
+    }
+    .section1 .cifrasSection1 div{
+        padding: 2% 2% 0 0
+    } 
+}
+
+
+
+/* SECTION 1 */
+.section1{
+    padding: 10% 5% 0 0;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;    
+    justify-content: space-between; 
+     
+}
+.contenidoSection1{          
+    padding: 0 5% 0 5%;
+    width: 100%;    
+}
+
+/* Titulo - Section 1 */
+.tituloSection1{
+    font-size: 3.7rem;
+}
+.parrafoSection1{
+    font-size: 1.5rem;
+    width: 100%;
+    color: rgb(129, 127, 127);
+}
+
+/* Buscador */
+.divBusqueda{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10% 0 8% 0;
+}
+.searchBar{ 
+    width: 100%;
+    display: flex;
+    justify-content: left;    
+    cursor: pointer;    
+    padding: 1% 5% 0 0;
+    background: #fff;
+    border-radius: 30px;    
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+}
+/* .searchBar:hover input{
+    width: 100%;
+} */
+.lupita{
+    padding: 0 3% 0 10%;
+    transition: scale 0.2 ease;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;    
+}
+.lupita:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.lupita:active{
+    scale: 0.95;
+}
+.searchBar input{
+    width: 40rem;
+    outline: none;
+    font-weight: 500;
+    background: transparent;
+    /* transition: 0.8s;
+     */
+}
+.searchBar .fas{
+    color: rgb(134, 133, 133);
+    /*font-size: 18px;
+     width: 200px;*/
+} 
+.inputSearch{
+    font-size: 1.1rem;
+    border: 0; 
+}
+
+/* Action Button 2 */
+.actionBtn2{
+    background-color: rgb(71, 71, 241);
+    width: 14rem;
+    height: 4rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.5rem;    
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+}
+.actionBtn2:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.actionBtn2:active{
+    scale: 0.95;
+}
+
+/* Cifras - Section 1 */
+.cifrasSection1{    
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 5% 0 0 0; 
+}
+.cifrasSection1 h1{
+    font-size: 3rem;
+}
+.cifrasSection1 p{
+    font-size: 1.5rem;
+    color: rgb(133, 133, 133);
+}
+
+/* Imagen - Section 1 */
+.imagenSection1{
+    padding: 0 0 0 3%;    
+}
+.imagenSection1 img{
+    height: 80vh;
+    border-radius: 30px;
 }
