@@ -6,8 +6,8 @@
 }
 
 section{ 
-    padding: 12% 8% 2% 8%;    
-    height: calc(100vh - 60px);
+    padding: 8% 8% 2% 8%;    
+    height: 100vh;/* calc(100vh - 60px); */
     width: 100%;  
      
 }
@@ -16,6 +16,7 @@ section{
 
 header{
     position: fixed;
+    z-index: 1;    
     width: 100%;
     padding: 1.1% 8% 1.1% 8%;
     background-color: lightblue;       
@@ -214,7 +215,35 @@ nav .toggleBtn{
     .divBoton4 a{
         font-size: 1.2rem;        
     }
-
+    .section3 .section3Columna01 h1{              
+        font-size: 2.7rem;
+        line-height: 2;
+    }
+     .section3 .section3Columna01 p{    
+        font-size: 1.2rem;
+        color: rgb(117, 115, 115);
+        line-height: 2;    
+    }
+    .section3 .section3Columna01 img{
+        margin-top: 5%;    
+        height: 25vh;
+        border-radius: 40px;
+    } 
+    .section3 .section3Columna02 h1{              
+        font-size: 2.7rem;
+        line-height: 2;
+    }
+     .section3 .section3Columna02 p{    
+        font-size: 1.2rem;
+        color: rgb(117, 115, 115);
+        line-height: 2;    
+    }
+    .section3 .section3Columna02 img{
+        margin-top: 5%;    
+        height: 25vh;
+        border-radius: 40px;
+    } 
+    
 }
 
 @media (max-width: 576px){
@@ -291,6 +320,23 @@ nav .toggleBtn{
     .divBoton4 a{
         font-size: 0.8rem;        
     }
+    .section3{
+        display: flex;
+        flex-direction: column;        
+    }
+    .section3 .section3Columna01{
+        width: 100%;
+    }     
+    .section3 .section3Columna02{
+        width: 100%;
+    }
+    .section3 .section3Columna01 img{           
+        height: 35vh;        
+    }
+    .section3 .section3Columna02 img{
+        display: none;
+    }
+    
              
 }
 
@@ -416,7 +462,7 @@ nav .toggleBtn{
 
 /* Contenido - Section 2 */
 .contenidoSection2{
-    padding: 8% 0 2% ;
+    /* padding: 2% 0 2% 0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -460,7 +506,7 @@ nav .toggleBtn{
     border-radius: 25px;
 }
 
-.actionBtn3{ 
+.actionBtn3{     
     background-color: black;
     width: 9rem;
     height: 3rem;
@@ -477,7 +523,7 @@ nav .toggleBtn{
     text-decoration: none;
     position: absolute;
     top: 5%;
-    left: 5%;    
+    left: 5%;      
 }
 .actionBtn3:hover{
     scale: 1.05;
@@ -514,14 +560,16 @@ nav .toggleBtn{
 /* Boton See More - Sección 2 */
 
 .section2 .barraBoton4{
-    padding: 8% 0 0 0;
-    display: flex;
-    align-items: center;
+    padding: 8% 0 8% 0; 
+    display: flex;    
     justify-content: space-between;
-    width: 100%;
+    
+    /* align-items: center; */
+    /*justify-content: space-between;  */
+    /* width: 100%; */
 }
 
-.divBoton4{
+.divBoton4{    
     background-color: transparent;
     width: 15rem;
     height: 4.5rem;
@@ -549,6 +597,45 @@ nav .toggleBtn{
     scale: 0.95;
 }
 .barraBoton4 p{
+    padding: 2% 0 10% 0;
     font-size: 1.5rem;
     color: rgb(117, 115, 115);
 }
+
+
+/* SECTION 3 */
+
+.section3{
+    /* padding: 8% 0 2% 0; */
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section3Columna01{
+    display: flex;
+    flex-direction: column;    
+    width: 47%;
+}
+.section3Columna02{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+} 
+.section3Columna01 p{
+    padding-bottom: 4%;
+}
+.section3 h1{              
+    font-size: 4rem;
+    line-height: 2;
+}
+ .section3 p{    
+    font-size: 1.5rem;
+    color: rgb(117, 115, 115);
+    line-height: 2;    
+}
+.section3 img{
+    margin-top: 5%;    
+    height: 50vh;
+    border-radius: 40px;
+}  
