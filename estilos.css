@@ -19,13 +19,14 @@ header{
     z-index: 1;    
     width: 100%;
     padding: 1.1% 5% 1.1% 5%;
-    background-color: lightblue;       
+    background-color: white;       
 }
 
 /* logo */
 img{
-    height: 3rem;
+    height: 5rem;
 }
+
 
 /* nav */
 nav{   
@@ -33,6 +34,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 1.2rem;
 }
 
 /* Lista de links */
@@ -56,7 +65,7 @@ nav .links{
 /* botón GET A QUOTE */
 
 .actionBtn{
-    background-color: rgba(59, 59, 214, 0.829);
+    background-color: rgba(0, 0, 255, 0.829);
     width: 10rem;
     height: 3rem;
     color: #fff;
@@ -342,6 +351,14 @@ nav .toggleBtn{
     .section6 .galeriaSection6 img{
         height: 6vh;    
     }
+    .section6 .barraNavegacionGaleria02{
+        display: none;
+    }
+
+    /* SECTION 7 */
+    .section7 .imagenSection7{
+        display: none;
+    }
 }
 
 @media (max-width: 425px){
@@ -556,8 +573,6 @@ nav .toggleBtn{
     .section6 .galeriaResponsive06 .dos02 h2{
         font-size: 1.1rem;
     }
-    
-    
     .section6 .barraNavegacionGaleria02{
         padding: 22% 0 0 0;  
         display: flex;
@@ -573,7 +588,34 @@ nav .toggleBtn{
     }
     .barraNavegacionGaleria02 i{
         font-size: 1.5rem;
-    }    
+    }   
+    
+    /* SECTION 7 */
+
+    .section7 .contenidoSection7 h1{
+        font-size: 2.5rem;
+    }
+    .contenidoSection7 p{
+        font-size: 1.2rem;
+        width: 100%;
+        color: rgb(129, 127, 127);
+        line-height: 2;
+    }
+    .section7 .contenidoSection7 .divBoton7{
+        padding-left: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .section7 .contenidoSection7 .imagenesSection7{
+        padding: 4% 0 0 0;
+        display: flex;        
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section7 .contenidoSection7 .imagenesSection7 img{
+        height: 14vh;        
+    }
+
 }
 
 
@@ -649,7 +691,7 @@ nav .toggleBtn{
 
 /* Action Button 2 */
 .actionBtn2{
-    background-color: rgb(71, 71, 241);
+    background-color: rgb(0, 0, 255);
     width: 14rem;
     height: 4rem;
     color: #fff;
@@ -774,7 +816,7 @@ nav .toggleBtn{
     justify-content: space-around;
 }
 .galeriaSection2 .galeria01 h2{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
 }
 .galeriaSection2 .galeria01 p{
     font-size: 1.5rem;
@@ -1109,10 +1151,10 @@ nav .toggleBtn{
     line-height: 2;
 }
 .contenidoSection7 .divBoton7{
-    padding: 4% 0 2% 0;
+    padding: 4% 0 4% 0;
 }
 .actionBtn7{
-    background-color: rgb(71, 71, 241);
+    background-color: rgb(0, 0, 255);
     width: 14rem;
     height: 4rem;
     color: #fff;
@@ -1140,11 +1182,11 @@ nav .toggleBtn{
     justify-content: space-between;
 }
 .imagenesSection7 img{
-    height: 33vh;
+    height: 31.5vh;
     border-radius: 30px;
 }
 .imagenesSection7 div{
-    padding: 0 2% 0 0;
+    padding: 0 0 0 0;
 }
 
-  
+ /* FOOTER */ 
