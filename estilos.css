@@ -55,7 +55,7 @@ nav a{
     font-size: 1.18rem;
 }
 a:hover{
-    color: orange;
+    font-weight: bold;
 }
 nav .links{
     display: flex;
@@ -103,7 +103,7 @@ nav .toggleBtn{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(0, 0, 255, 0.2);   
+    background: rgba(255, 255, 255, 0.2);   
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden; 
@@ -124,7 +124,11 @@ nav .toggleBtn{
     height: 24rem;    
 }
 .dropdownMenu a{
+    color: black;
     text-decoration: none;
+}
+.dropdownMenu .actionBtn{
+    color: white;
 }
 
 
@@ -394,6 +398,38 @@ nav .toggleBtn{
     }
 
     /* FOOTER */
+    footer .footer01 h1{
+        font-size: 1rem;
+    }
+    footer .footer01 p{
+        font-size: 0.8rem;        
+    }
+    footer .footer01 a{
+        font-size: 1rem;        
+    }
+    footer .footer01 .locationFooter i{    
+        font-size: 1rem;    
+    } 
+    footer .footer01 .phone i{    
+        font-size: 1rem;    
+    } 
+    footer .footer01 .envelope i{    
+        font-size: 1rem;    
+    }  
+    footer .footer01 input{        
+        height: 2.5rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+    footer .footer01 .actionBtn8{        
+        height: 2.5rem;        
+        font-size: 1rem; 
+    }
+    footer .footer01 .logo img{
+        height: 6vh;
+    }
+
+
 }
 
 @media (max-width: 425px){
@@ -652,6 +688,21 @@ nav .toggleBtn{
     }
     .section7 .contenidoSection7 .imagenesSection7 img{
         height: 14vh;        
+    }
+
+    /* FOOTER */
+    footer .footer01 .footNews{
+        display: none;
+    }
+    footer .footer01 .links{
+        display: none;
+    }
+    footer .footer01{
+        padding-left: 5%;        
+        ;
+    }
+    footer .footer01 h1{
+        font-size: 0.5rem;
     }
 
 }
@@ -1258,6 +1309,11 @@ footer .footer01 h1{
     width: 100%;
     color: rgb(129, 127, 127);
     line-height: 2;
+}
+
+.footer01 .links{
+    display: flex;
+    flex-direction: column;
 }
 .footer01 a{
     font-size: 1.7rem;
