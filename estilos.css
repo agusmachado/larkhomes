@@ -8,8 +8,8 @@
 section{ 
     padding: 5% 5% 0 5%;
     margin: 5% 0 5% 0;  
-    height: 100vh;/* calc(100vh - 60px); */
-    width: 100%; 
+    height: 100vh/* calc(100vh - 60px) */;
+    width: 100%;
 }
 
 /* HEADER */
@@ -130,13 +130,14 @@ nav .toggleBtn{
 
 
 /* RESPONSIVE DESIGN */
-@media(max-width: 992px){
+@media(max-width: 768px){
     nav .links,
     nav .actionBtn{
         display: none;
     }
 
     nav .toggleBtn{
+        padding-right: 5%;
         display: block;
     }
 
@@ -151,7 +152,18 @@ nav .toggleBtn{
     } 
     .section1 .contenidoSection1{
         width: 100%;
-    }  
+    } 
+    .section1 .contenidoSection1 .tituloSection1 h1{
+        font-size: 2.5rem;
+    }
+    .section1 .divBusqueda .searchBar .divBusquedaInput input{
+        width: 10rem;
+    }
+    .section1 .divBusqueda .actionBtn2{
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }     
     .section1 .imagenSection1 img{
         display: none;
     } 
@@ -230,7 +242,7 @@ nav .toggleBtn{
         height: 3.5rem;
     }
     .divBoton4 a{
-        font-size: 1.2rem;        
+        font-size: 1rem;        
     }
 
     /* SECTION 3 */
@@ -276,7 +288,7 @@ nav .toggleBtn{
         width: 22%;
     }
     .section4 .galeriaSection4 .galeria_1 h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .section4 .galeriaSection4 .galeria_1 p{
         font-size: 1.1rem;
@@ -289,7 +301,7 @@ nav .toggleBtn{
         width: 10rem; 
     }
     .section4 .barraBoton5 a{              
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /* SECTION 5 */
@@ -297,15 +309,15 @@ nav .toggleBtn{
         margin-bottom: 5%;
     }
     .section5 .contenidoSection5 h1{          
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     .section5 .contenidoSection5 p{
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: rgb(117, 115, 115);
         line-height: 2;
     }     
     .section5 .galeriaSection5 i{
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
     .section5 .galeriaSection5 .galeria_1 .check{
         margin-right: 5%;
@@ -315,16 +327,16 @@ nav .toggleBtn{
         margin-top: 0;
     }
     .section5 .galeriaSection5 .galeria_1 h2{
-        font-size: 2rem;
+        font-size: 1.1rem;
         line-height: 1.5;    
     }
     .section5 .galeriaSection5 .galeria_1 p{
-        font-size: 1.2rem;    
+        font-size: 1rem;    
         color: rgb(117, 115, 115);
         line-height: 1.5;
     }     
     .section5 .section5Columna02 img{ 
-        height: 72vh;
+        height: 60vh;
         border-radius: 30px;
         margin-left: 0;
     }
@@ -332,7 +344,7 @@ nav .toggleBtn{
     /* SECTION 6 */
     
     .section6 .contenidoSection6 h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .section6 .contenidoSection6 p{
         font-size: 1.2rem;
@@ -340,25 +352,48 @@ nav .toggleBtn{
         line-height: 2;
     }
     .section6 .galeriaSection6 .galeria06 h2{
-        font-size: 1rem;
+        font-size: 0.8rem;
         line-height: 1.5;    
     }
     .section6 .galeriaSection6 .galeria06 p{
-        font-size: 1.2rem;    
+        font-size: 1rem;    
         color: rgb(117, 115, 115);
         line-height: 1.5;
+    }
+    .section6 .galeriaSection6 .galeria06 .locacionesGaleria{
+        margin-top: 25%;
+    }
+    .section6 .galeriaSection6 .galeria06 .locacionesGaleria .dos02 h2{
+        margin-top: 25%;
     }
     .section6 .galeriaSection6 img{
         height: 6vh;    
     }
-    .section6 .barraNavegacionGaleria02{
-        display: none;
-    }
+    
 
     /* SECTION 7 */
+    .section7 .contenidoSection7 h1{
+        font-size: 2rem;
+    }
+    .section7 .contenidoSection7 p{
+        font-size: 1.5rem;
+    }    
+    .section7 .contenidoSection7 .divBoton7{
+        padding-left: 35%;
+        display: flex;
+        align-items: center;        
+    }
+    .section7 .contenidoSection7 .divBoton7 a{        
+        font-size: 1.3rem;
+    }
+    .section7 .contenidoSection7 .imagenesSection7 img{
+        height: 25vh;
+    }
     .section7 .imagenSection7{
         display: none;
     }
+
+    /* FOOTER */
 }
 
 @media (max-width: 425px){
@@ -570,6 +605,9 @@ nav .toggleBtn{
     .section6 .galeriaResponsive06 .locacionesGaleria{
         width: 100%;        
     }
+    .section6 .galeriaResponsive06 .uno01 img{
+        height: 7vh;
+    }
     .section6 .galeriaResponsive06 .dos02 h2{
         font-size: 1.1rem;
     }
@@ -578,7 +616,7 @@ nav .toggleBtn{
         display: flex;
         align-items: center; 
         justify-content: space-evenly;       
-        width: 100%;        
+        width: 100%;                
     }
     .section6 .barraNavegacionGaleria02 .puntito{ 
         height: 1rem;
@@ -629,7 +667,7 @@ nav .toggleBtn{
      
 }
 .contenidoSection1{ 
-    width: 48%;       
+    width: 49%;       
 }
 
 /* Titulo - Section 1 */
@@ -777,10 +815,10 @@ nav .toggleBtn{
 }
 .galeria01{
     position: relative;
-    width: 25%;
+    width: 24%;
 }
 .galeriaSection2 .galeria01 img{
-    height: 33vh;
+    height: 30vh;
     border-radius: 25px;
 }
 
@@ -910,7 +948,7 @@ nav .toggleBtn{
 }
 .section3 img{
     margin-top: 5%;    
-    height: 60vh;
+    height: 45vh;
     border-radius: 40px;
 }  
 
@@ -1072,7 +1110,7 @@ nav .toggleBtn{
     width: 48%;
 }
 .section5 img{    
-    height: 100vh;
+    height: 85vh;
     border-radius: 30px;
     margin-left: 15%;
 }
@@ -1125,6 +1163,9 @@ nav .toggleBtn{
 .galeriaResponsive06{
     display: none;
 }
+.section6 .barraNavegacionGaleria02{
+    display: none;
+}
 
 
 /* SECTION 7 */
@@ -1135,7 +1176,7 @@ nav .toggleBtn{
     justify-content: space-between;
 }
 .section7 .imagenSection7 img{
-    height: 87vh;
+    height: 75vh;
     border-radius: 30px;
 }
 .section7 .contenidoSection7{
@@ -1182,7 +1223,7 @@ nav .toggleBtn{
     justify-content: space-between;
 }
 .imagenesSection7 img{
-    height: 31.5vh;
+    height: 28vh;
     border-radius: 30px;
 }
 .imagenesSection7 div{
@@ -1190,3 +1231,116 @@ nav .toggleBtn{
 }
 
  /* FOOTER */ 
+
+ footer{    
+    background-color: rgb(250, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    width: 100%;
+ }
+ footer .logo{
+    display: flex;
+    align-items: center;
+}
+footer .footer01{
+    display: flex;    
+    flex-direction: column;
+    width: 24%;
+    margin: 5% 3% 5% 3%;
+}
+footer .footer01 h1{
+    line-height: 2;
+}
+.footer01 p{
+    font-size: 1.5rem;
+    width: 100%;
+    color: rgb(129, 127, 127);
+    line-height: 2;
+}
+.footer01 a{
+    font-size: 1.7rem;
+    color: black;
+    line-height: 2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer01 .locationFooter{    
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;    
+}
+.footer01 .locationFooter div{    
+    padding: 1% 2% 1% 2%;      
+}
+.footer01 .locationFooter i{    
+    font-size: 2rem;    
+}
+.footer01 .phone{    
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;    
+}
+.footer01 .phone div{    
+    padding: 1% 2% 1% 2%;      
+}
+.footer01 .phone i{    
+    font-size: 2rem;    
+}
+.footer01 .envelope{    
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;    
+}
+.footer01 .envelope div{    
+    padding: 1% 2% 1% 2%;      
+}
+.footer01 .envelope i{    
+    font-size: 2rem;    
+}
+
+.contenidoSection7 .divBoton7{
+    padding: 4% 0 4% 0;
+}
+.footer01 input{
+    padding: 5% 0 5% 0;
+    border-radius: 30px;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.5rem;      
+    color: rgb(185, 185, 185); 
+    border: 1px solid grey; 
+}
+
+
+/* Footer - Botón Submit */
+.footer01 .actionBtn8{
+    background-color: rgb(0, 0, 255);
+    width: 100%;
+    height: 4rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.5rem;    
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+}
+.footer01 .actionBtn8:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.footer01 .actionBtn8:active{
+    scale: 0.95;
+}
+.footer01 .newsletter{
+    padding: 5% 0 5% 0;
+}
+.footer01 .newsletter .input{
+    padding: 5% 0 5% 0;
+}
