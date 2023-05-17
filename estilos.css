@@ -646,21 +646,21 @@ nav .toggleBtn{
     }
     .section6 .galeriaResponsive06 .dos02 h2{
         font-size: 1.1rem;
-    }
-    .section6 .barraNavegacionGaleria02{
+    }    
+    .section6 .galeriaResponsive06 .barraNavegacionGaleria02{
         padding: 22% 0 0 0;  
         display: flex;
         align-items: center; 
         justify-content: space-evenly;       
         width: 100%;                
     }
-    .section6 .barraNavegacionGaleria02 .puntito{ 
+    .section6 .galeriaResponsive06 .barraNavegacionGaleria02 .puntito{ 
         height: 1rem;
         width: 1rem;
         background-color: black;
         border-radius: 50%;
     }
-    .barraNavegacionGaleria02 i{
+    .section6 .galeriaResponsive06 .barraNavegacionGaleria02 i{
         font-size: 1.5rem;
     }   
     
