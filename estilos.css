@@ -338,6 +338,22 @@ nav .toggleBtn{
         font-size: 1rem;    
         color: rgb(117, 115, 115);
         line-height: 1.5;
+    } 
+    .section5 .galeriaSection5 .galeria_2 .check{
+        margin-right: 5%;
+        margin-bottom: 30%;
+        display: flex;
+        position: relative;
+        margin-top: 0;
+    }
+    .section5 .galeriaSection5 .galeria_2 h2{
+        font-size: 1.1rem;
+        line-height: 1.5;    
+    }
+    .section5 .galeriaSection5 .galeria_2 p{
+        font-size: 1rem;    
+        color: rgb(117, 115, 115);
+        line-height: 1.5;
     }     
     .section5 .section5Columna02 img{ 
         height: 60vh;
@@ -551,8 +567,12 @@ nav .toggleBtn{
 
     /* Section 4 - Galeria */
 
+    .section4 .galeriaSection4{        
+        background-color: rgba(199, 191, 191, 0.4);
+        border-radius: 30px;
+    }
     .section4 .galeriaSection4 .galeria_1{
-        width: 23.5%;
+        width: 23.5%;        
     }
     .section4 .galeriaSection4 .galeria_1 h1{
         font-size: 1.5rem;
@@ -563,7 +583,8 @@ nav .toggleBtn{
         font-size: 0.8rem;
     }
     .section4 .galeriaSection4 .galeria_1 p{
-        border: 0.5px solid rgb(211, 204, 204);
+        border: 0.7px solid rgba(211, 204, 204, 0.3);
+        background-color: rgba(211, 204, 204, 0.8);
         font-size: 1rem;
         border-radius: 10px;
     }    
@@ -1110,6 +1131,7 @@ nav .toggleBtn{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* background-color: rgb(250, 248, 248); */
 }
 .section5 .contenidoSection5{        
     display: flex;
@@ -1117,7 +1139,7 @@ nav .toggleBtn{
     flex-direction: column;    
     width: 100%;
 }
-.section5 .section5Columna01{
+.section5 .section5Columna01{    
     width: 48%;
 }
 .contenidoSection5 h1{          
@@ -1131,6 +1153,8 @@ nav .toggleBtn{
 .section5 .galeriaSection5{
     display: flex;
     flex-direction: column;
+    background-color: rgb(250, 248, 248);
+    border-radius: 30px;
 }
 .galeriaSection5 .galeria_1{    
     display: flex;
@@ -1138,6 +1162,21 @@ nav .toggleBtn{
     justify-content: space-between;
 }
 .galeriaSection5 .galeria_1 .check{
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    position: relative;
+    margin-top: 0;
+}
+.galeriaSection5 .galeria_2{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;  
+    box-shadow: 0.5px 0.5px 10px 0px #ebe8e8;  
+}
+.galeriaSection5 .galeria_2 .check{
     margin-right: 5%;
     margin-bottom: 10%;
     display: flex;
@@ -1152,6 +1191,15 @@ nav .toggleBtn{
     line-height: 2;    
 }
 .galeriaSection5 .galeria_1 p{
+    font-size: 1.5rem;    
+    color: rgb(117, 115, 115);
+    line-height: 2;
+}
+.galeriaSection5 .galeria_2 h2{
+    font-size: 2.7rem;
+    line-height: 2;    
+}
+.galeriaSection5 .galeria_2 p{
     font-size: 1.5rem;    
     color: rgb(117, 115, 115);
     line-height: 2;
